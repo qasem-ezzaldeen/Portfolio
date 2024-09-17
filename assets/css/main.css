@@ -4756,3 +4756,13 @@ input, select, textarea {
 		}
 
 	}
+.about_me p{
+	font-size: normal;
+}
+.skills{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.sql{list-style-type: none;}
