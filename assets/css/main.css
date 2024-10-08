@@ -4766,3 +4766,8 @@ input, select, textarea {
 	justify-content: space-between;
 }
 .sql{list-style-type: none;}
+
+.post.featured  img{
+	border-radius: 6px;
+}
+

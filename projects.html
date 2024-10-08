@@ -68,55 +68,75 @@
       <div id="main">
         <article class="post featured">
           <header>
-              <h2>Digital Marketing Campaign Overview | Tableau</h2>
+              <h2>Transportation Efficiency Study | Python & Tableau</h2>
               <a href="javascript:void(0);" class="modal-open4">
-                  <img src="images/Marketing.png" alt="Digital Marketing Campaign" style="max-width:100%; height:auto; cursor:pointer;">
+                  <img src="images/co2/overview.png" alt="CO2" style="max-width:100%; height:auto; cursor:pointer;">
               </a>
           </header>
-          <p>This dashboard highlights the key performance metrics of a February 2021 digital marketing campaign. It provides an overview of revenue, return on marketing investment (ROMI), click-through rate (CTR), and conversion rate (CR). The data offers insights into the effectiveness of various channels, helping to inform future marketing strategies..</p>
+          <p>Transportation efficiency study using CO<sub>2</sub> emissions and car registeration data across Europe to find out how can we reduce polution caused by cars.</p>
           <button class="btn modal-open4">View Project</button> <br><br>
           <div class="modal4">
               <div class="parent"><button class="btn modal-close4 top"><img src="./images/close.png" alt=""></button></div>
               
               <section>
-                <img src="./images/Marketing.png" alt="Dining Satisfaction Analysis Details">
-                <h2>Digital Marketing Campaign Overview</h2>
-                    <p>This Tableau dashboard provides an in-depth analysis of a digital marketing campaign's performance for February 2021. The dashboard includes key metrics such as revenue, marketing spend, Return on Marketing Investment (ROMI), Click-Through Rate (CTR), and Conversion Rate (CR).</p>
-                  <h3>Main Highlights</h3>
-                  <ul>
-                    <li><strong>Top Metrics:</strong> The top row of the dashboard displays the overall campaign's key performance indicators:
+                <h2>Transportation Efficiency Study</h2>
+                <div style="text-align: left;">
+                  <h3>Data Collection</h3>
+                  <p>
+                    To gather the necessary data for this study, I utilized ChatGPT, which provided me with a variety of data sources. After reviewing these, I decided to focus my analysis on car registration data collected across Europe in 2023. The dataset I selected can be found at the following link:<br> 
+                    <b><a href="https://co2cars.apps.eea.europa.eu/?source=%7B%22track_total_hits%22%3Atrue%2C%22query%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22constant_score%22%3A%7B%22filter%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22year%22%3A2023%7D%7D%5D%7D%7D%2C%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22scStatus%22%3A%22Provisional%22%7D%7D%5D%7D%7D%5D%7D%7D%7D%7D%5D%7D%7D%2C%22display_type%22%3A%22tabular%22%7D">Link to the Dataset</a></b>.
+                  </p>
+                  <img src="./images/co2/data.png" alt="Data Collection">
+                  
+                  <h3>Data Preprocessing and Cleaning with Python</h3>
+                  <p>
+                    After downloading the dataset, I loaded it into a pandas DataFrame to begin the preprocessing and cleaning phase. The raw data contained many missing values, especially in important fields like car make and model, which are crucial for the analysis. Additionally, there were several unnecessary columns that did not contribute to the study, so I removed them to streamline the dataset. I handled the missing values by dropping records where essential fields were empty. Once the dataset was cleaned, I exported it to a CSV file for further use in building the dashboard.
+                  </p>
+                  
+                  <h3>Dashboard</h3>
+                  <img src="images/co2/overview.png" alt="overview co2" >
+                  <img src="images/co2/details.png" alt="details co2">
+
+                  <h3>Insights and Summary</h3>
+                  <ol>
+                    <li>
+                      <h5>Cars Registered & CO2 Emissions:</h5>
                       <ul>
-                        <li><strong>Revenue:</strong> $42.89M</li>
-                        <li><strong>Marketing Spend:</strong> $30.59M</li>
-                        <li><strong>ROMI:</strong> 0.40</li>
-                        <li><strong>CTR:</strong> 0.19%</li>
-                        <li><strong>CR:</strong> 0.27%</li>
-                        <li><strong>CPC:</strong> $10.20</li>
-                        <li><strong>CAC:</strong> $466.47</li>
+                        <li>10.73M cars are registered in Europe, with an average CO2 emission of 106.67 g/km and fuel consumption of 5.41 g/km.</li>
+                        <li>Germany, Italy, and France lead in both registrations and CO2 emissions.</li>
                       </ul>
                     </li>
-                  </ul>
-                  <h3>Detail by Source</h3>
-  <p>Visuals in the "Detail by Source" section include a breakdown of revenue by marketing sources such as Facebook, Google, Instagram, Media Banners, and YouTube. The pie chart highlights the revenue contribution from each source, with specific dollar amounts labeled.</p>
+                    <li>
+                      <h5>Fuel Type & Electric Vehicles:</h5>
+                      <ul>
+                        <li>Petrol cars dominate at 56.03%, followed by diesel (16.98%). Electric cars account for 15.55%, highlighting the need for further growth to reduce emissions.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h5>CO2 Emissions by Engine Size & Fuel Consumption:</h5>
+                      <ul>
+                        <li>Larger engines produce more CO2, and higher fuel consumption correlates with higher emissions. Reducing fuel-hungry vehicles is critical.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h5>Supercars vs. Regular Cars:</h5>
+                      <ul>
+                        <li>Supercars like the Aston Martin Valkyrie and Bugatti Chiron have very high CO2 emissions, averaging over 400 g/km, but they are rare (Valkyrie: 11, Chiron: 1).</li>
+                        <li>In contrast, everyday cars like the Sandero (223,289 registered) and TROC (177,749 registered) have a much larger presence and contribute heavily to CO2 emissions despite having lower per-car emissions.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <h5>Electric Conversion Recommendation:</h5>
+                      <ul>
+                        <li>High-volume, high-emission cars like the Sandero and TROC need to transition to electric models, which produce zero emissions, to reduce the overall environmental impact of transportation.</li>
+                      </ul>
+                    </li>
+                  </ol>
 
-  <h3>Detail by Channel</h3>
-  <p>This section categorizes the marketing efforts into channels like Influencer, Media, Search, and Social. The visuals provide insights into which channels are most effective in terms of revenue and ROMI.</p>
-  
-  <h3>Click-Through Rate (CTR) and Conversion Rate (CR)</h3>
-  <p>The bottom section includes line charts that track the daily CTR and CR throughout February. This data visualization allows for trend analysis across different sources and channels, helping identify which marketing strategies are performing best over time.</p>
-
-  <h3>Key Insights</h3>
-  <ul>
-    <li><strong>Revenue Distribution:</strong> The pie charts show how revenue is distributed among sources and channels, offering a clear picture of which areas are generating the most income.</li>
-    <li><strong>ROMI Comparison:</strong> The bar charts illustrate the ROMI for different sources and channels, helping identify the most cost-effective marketing efforts.</li>
-    <li><strong>Daily Performance Trends:</strong> The line charts for CTR and CR track performance fluctuations, providing actionable insights into daily campaign effectiveness.</li>
-  </ul>
-  
-  <p>This dashboard allows for a comprehensive view of the digital marketing campaign's performance, helping guide future strategies for maximizing ROI.</p>
-
+                </div>
                 </section>
                 <div class="github-link" style="text-align: center; margin-bottom: 20px;">
-                  <a href="https://github.com/qasem-ezzaldeen/Marketing-Campaign" target="_blank" style="font-size: 20px; text-decoration: none; color: #007bff; font-weight: bold;">Project on GitHub</a>
+                  <a href="https://github.com/qasem-ezzaldeen/Transportation-efficiency-study" target="_blank" style="font-size: 20px; text-decoration: none; color: #007bff; font-weight: bold;">Project on GitHub</a>
                 </div>
           </div>
           <script>
