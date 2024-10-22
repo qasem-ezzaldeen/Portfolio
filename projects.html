@@ -23,7 +23,7 @@
           <img
             src="./images/Casio.jpg"
             alt="Picture of me"
-            style="width: clamp(250px, 60%, 450px); border-radius: 50%"
+            style="width: clamp(250px, 70%, 650px); border-radius: 50%"
           />
           <h1>Al-Qasem Ezzaldeen</h1>
         </div>
@@ -68,86 +68,119 @@
       <div id="main">
         <article class="post featured">
           <header>
-              <h2>Transportation Efficiency Study | Python & Tableau</h2>
-              <a href="javascript:void(0);" class="modal-open4">
-                  <img src="images/co2/overview.png" alt="CO2" style="max-width:100%; height:auto; cursor:pointer;">
+              <h2>HR Analytics | Python & Tableau</h2>
+              <a href="javascript:void(0);" class="modal-open100">
+                  <img src="images/HR/Employee Overview.png" alt="hr" style="max-width:100%; height:auto; cursor:pointer;">
               </a>
           </header>
-          <p>Transportation efficiency study using CO<sub>2</sub> emissions and car registeration data across Europe to find out how can we reduce polution caused by cars.</p>
-          <button class="btn modal-open4">View Project</button> <br><br>
-          <div class="modal4">
-              <div class="parent"><button class="btn modal-close4 top"><img src="./images/close.png" alt=""></button></div>
+          <p>A comprehensive analysis of employee attrition, satisfaction, and performance using IBM's HR Analytics dataset. This project aims to help decision-makers proactively address workforce management challenges through data-driven insights.</p>
+          <button class="btn modal-open100">View Project</button> <br><br>
+          <div class="modal100">
+              <div class="parent"><button class="btn modal-close100 top"><img src="./images/close.png" alt=""></button></div>
               
               <section>
-                <h2>Transportation Efficiency Study</h2>
-                <div style="text-align: left;">
-                  <h3>Data Collection</h3>
-                  <p>
-                    To gather the necessary data for this study, I utilized ChatGPT, which provided me with a variety of data sources. After reviewing these, I decided to focus my analysis on car registration data collected across Europe in 2023. The dataset I selected can be found at the following link:<br> 
-                    <b><a href="https://co2cars.apps.eea.europa.eu/?source=%7B%22track_total_hits%22%3Atrue%2C%22query%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22constant_score%22%3A%7B%22filter%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22year%22%3A2023%7D%7D%5D%7D%7D%2C%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22scStatus%22%3A%22Provisional%22%7D%7D%5D%7D%7D%5D%7D%7D%7D%7D%5D%7D%7D%2C%22display_type%22%3A%22tabular%22%7D">Link to the Dataset</a></b>.
-                  </p>
-                  <img src="./images/co2/data.png" alt="Data Collection">
-                  
-                  <h3>Data Preprocessing and Cleaning with Python</h3>
-                  <p>
-                    After downloading the dataset, I loaded it into a pandas DataFrame to begin the preprocessing and cleaning phase. The raw data contained many missing values, especially in important fields like car make and model, which are crucial for the analysis. Additionally, there were several unnecessary columns that did not contribute to the study, so I removed them to streamline the dataset. I handled the missing values by dropping records where essential fields were empty. Once the dataset was cleaned, I exported it to a CSV file for further use in building the dashboard.
-                  </p>
-                  
-                  <h3>Dashboard</h3>
-                  <img src="images/co2/overview.png" alt="overview co2" >
-                  <img src="images/co2/details.png" alt="details co2">
+                <h2>Gradutaion project for DEPI <br> IBM HR Analytics</h2>
+                <div class="presentation">
+                  <a href="https://www.canva.com/design/DAGTf41Swrg/mvUEYEJF2p5LoMZEucOtEA/edit?utm_content=DAGTf41Swrg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+                  <img src="images/HR/presentation.png" alt="presentation link" id="presentation">
+                  <button>Go to presentation</button>
+                </a>
+              </div>
+                <div style="text-align: left;" class="HR">
+                  <section>
+                    <h3>Team Members</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/ahmed-khoukh-42908a252/">Ahmed Khoukh</a></li>
+                        <li><a href="https://www.linkedin.com/in/salma-mohamed-9575b9221/">Salma Abdrabou</a></li>
+                        <li><a href="https://www.linkedin.com/in/amal-zaid-11b2a7280/">Aml Abdo Zayed</a></li>
+                        <li><a href="https://www.linkedin.com/in/menna-taha-670268255/">Mennatullah Taha</a></li>
+                        <li><a href="https://www.linkedin.com/in/abdelrhman-aleskandrany/">Abdelrhman Aleskandrany</a></li>
+                        <li><a href="https://www.linkedin.com/in/al-qasem-ezzaldeen/">Al-Qasem Ezzaldeen</a></li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h3>Project Overview</h3>
+                    <p>A comprehensive analysis of employee attrition, satisfaction, and performance using IBM's HR Analytics dataset. This project aims to help decision-makers proactively address workforce management challenges through data-driven insights.</p>
+                </section>
+            
+                <section>
+                    <h3>Key Objectives</h3>
+                    <ul>
+                        <li>Evaluate Employee Performance</li>
+                        <li>Analyze Employee Attrition</li>
+                        <li>Assess Monthly Income</li>
+                        <li>Measure Job Satisfaction</li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h3>Dataset Information</h3>
+                    <ul>
+                        <li>Source: Kaggle IBM HR Analytics Attrition Dataset</li>
+                        <li>Size: 1,470 employee records</li>
+                        <li>Features: 35 columns</li>
+                        <li>Format: CSV file</li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h3>Methodology & Results</h3>
+                    <h4>Model Accuracy:</h4>
+                    <ul>
+                        <li>Attrition Prediction: 96% accuracy</li>
+                        <li>Salary Prediction: 89% R² score</li>
+                        <li>Performance Rating: 94% accuracy</li>
+                        <li>Work-life Balance: 92% accuracy</li>
+                    </ul>
+                </section>
 
-                  <h3>Insights and Summary</h3>
-                  <ol>
-                    <li>
-                      <h5>Cars Registered & CO2 Emissions:</h5>
-                      <ul>
-                        <li>10.73M cars are registered in Europe, with an average CO2 emission of 106.67 g/km and fuel consumption of 5.41 g/km.</li>
-                        <li>Germany, Italy, and France lead in both registrations and CO2 emissions.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <h5>Fuel Type & Electric Vehicles:</h5>
-                      <ul>
-                        <li>Petrol cars dominate at 56.03%, followed by diesel (16.98%). Electric cars account for 15.55%, highlighting the need for further growth to reduce emissions.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <h5>CO2 Emissions by Engine Size & Fuel Consumption:</h5>
-                      <ul>
-                        <li>Larger engines produce more CO2, and higher fuel consumption correlates with higher emissions. Reducing fuel-hungry vehicles is critical.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <h5>Supercars vs. Regular Cars:</h5>
-                      <ul>
-                        <li>Supercars like the Aston Martin Valkyrie and Bugatti Chiron have very high CO2 emissions, averaging over 400 g/km, but they are rare (Valkyrie: 11, Chiron: 1).</li>
-                        <li>In contrast, everyday cars like the Sandero (223,289 registered) and TROC (177,749 registered) have a much larger presence and contribute heavily to CO2 emissions despite having lower per-car emissions.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <h5>Electric Conversion Recommendation:</h5>
-                      <ul>
-                        <li>High-volume, high-emission cars like the Sandero and TROC need to transition to electric models, which produce zero emissions, to reduce the overall environmental impact of transportation.</li>
-                      </ul>
-                    </li>
-                  </ol>
+                <section>
+                  <h3>Dashboard</h3>
+                  <div class="tableau-link" style="text-align: center; margin-bottom: 20px;">
+                    <a href="https://public.tableau.com/app/profile/qasem.ezzaldeen/viz/dashboard_17289785296840/SalaryOverview" target="_blank" style="font-size: 20px; text-decoration: none; color: #007bff; font-weight: bold;">Dashboard on Tableau Public</a>
+                  </div>
+                  <img src="images/HR/Employee Overview.png" alt="Employee Overview">
+                  <img src="images/HR/Attrition and Overtime.png" alt="Attrition Overview">
+                  <img src="images/HR/Salary Overview.png" alt="Salary Overview">
+              </section>
+            
+                <section>
+                    <h3>Key Findings</h3>
+                    <ul>
+                        <li>Employees closer to the workplace showed higher attrition rates</li>
+                        <li>Fresh employees were more prone to attrition compared to experienced staff</li>
+                        <li>Lower monthly income correlated with higher attrition rates</li>
+                        <li>Overtime work significantly impacted attrition rates</li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h3>Tools Used</h3>
+                    <ul>
+                        <li>Python (Pandas, NumPy)</li>
+                        <li>Visualization: Matplotlib, Seaborn, Plotly</li>
+                        <li>Machine Learning: Scikit-learn, Imbalanced-learn</li>
+                        <li>SQL</li>
+                        <li>Dashboard: Tableau</li>
+                    </ul>
+                </section>
 
                 </div>
                 </section>
                 <div class="github-link" style="text-align: center; margin-bottom: 20px;">
-                  <a href="https://github.com/qasem-ezzaldeen/Transportation-efficiency-study" target="_blank" style="font-size: 20px; text-decoration: none; color: #007bff; font-weight: bold;">Project on GitHub</a>
+                  <a href="https://github.com/qasem-ezzaldeen/Data-Analysis-Project" target="_blank" style="font-size: 20px; text-decoration: none; color: #007bff; font-weight: bold;">Project on GitHub</a>
                 </div>
           </div>
           <script>
               $(document).ready(function () {
-                  $('.modal-open4').on('click', function () {
-                      $('body').addClass('modal-open4');
-                      $('.modal4').fadeIn();
+                  $('.modal-open100').on('click', function () {
+                      $('body').addClass('modal-open100');
+                      $('.modal100').fadeIn();
                   });
-                  $('.modal-close4').on('click', function () {
-                      $('body').removeClass('modal-open4');
-                      $('.modal4').fadeOut();
+                  $('.modal-close100').on('click', function () {
+                      $('body').removeClass('modal-open100');
+                      $('.modal100').fadeOut();
                   });
               });
           </script>
@@ -157,15 +190,102 @@
         <section class="posts">
           <article>
             <header>
+                <h2>Transportation Efficiency Study | Python & Power BI</h2>
+                <a href="javascript:void(0);" class="modal-open3">
+                    <img src="images/co2/overview.png" alt="CO2" style="max-width:100%; height:auto; cursor:pointer;">
+                </a>
+            </header>
+            <p>Transportation efficiency study using CO<sub>2</sub> emissions and car registeration data across Europe to find out how can we reduce polution caused by cars.</p>
+            <button class="btn modal-open3">View Project</button> <br><br>
+            <div class="modal3">
+                <div class="parent"><button class="btn modal-close3 top"><img src="./images/close.png" alt=""></button></div>
+                
+                <section>
+                  <h2>Transportation Efficiency Study</h2>
+                  <div style="text-align: left;">
+                    <h3>Data Collection</h3>
+                    <p>
+                      To gather the necessary data for this study, I utilized ChatGPT, which provided me with a variety of data sources. After reviewing these, I decided to focus my analysis on car registration data collected across Europe in 2023. The dataset I selected can be found at the following link:<br> 
+                      <b><a href="https://co2cars.apps.eea.europa.eu/?source=%7B%22track_total_hits%22%3Atrue%2C%22query%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22constant_score%22%3A%7B%22filter%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22year%22%3A2023%7D%7D%5D%7D%7D%2C%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22scStatus%22%3A%22Provisional%22%7D%7D%5D%7D%7D%5D%7D%7D%7D%7D%5D%7D%7D%2C%22display_type%22%3A%22tabular%22%7D">Link to the Dataset</a></b>.
+                    </p>
+                    <img src="./images/co2/data.png" alt="Data Collection">
+                    
+                    <h3>Data Preprocessing and Cleaning with Python</h3>
+                    <p>
+                      After downloading the dataset, I loaded it into a pandas DataFrame to begin the preprocessing and cleaning phase. The raw data contained many missing values, especially in important fields like car make and model, which are crucial for the analysis. Additionally, there were several unnecessary columns that did not contribute to the study, so I removed them to streamline the dataset. I handled the missing values by dropping records where essential fields were empty. Once the dataset was cleaned, I exported it to a CSV file for further use in building the dashboard.
+                    </p>
+                    
+                    <h3>Dashboard</h3>
+                    <img src="images/co2/overview.png" alt="overview co2" >
+                    <img src="images/co2/details.png" alt="details co2">
+  
+                    <h3>Insights and Summary</h3>
+                    <ol>
+                      <li>
+                        <h5>Cars Registered & CO2 Emissions:</h5>
+                        <ul>
+                          <li>10.73M cars are registered in Europe, with an average CO2 emission of 106.67 g/km and fuel consumption of 5.41 g/km.</li>
+                          <li>Germany, Italy, and France lead in both registrations and CO2 emissions.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h5>Fuel Type & Electric Vehicles:</h5>
+                        <ul>
+                          <li>Petrol cars dominate at 56.03%, followed by diesel (16.98%). Electric cars account for 15.55%, highlighting the need for further growth to reduce emissions.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h5>CO2 Emissions by Engine Size & Fuel Consumption:</h5>
+                        <ul>
+                          <li>Larger engines produce more CO2, and higher fuel consumption correlates with higher emissions. Reducing fuel-hungry vehicles is critical.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h5>Supercars vs. Regular Cars:</h5>
+                        <ul>
+                          <li>Supercars like the Aston Martin Valkyrie and Bugatti Chiron have very high CO2 emissions, averaging over 400 g/km, but they are rare (Valkyrie: 11, Chiron: 1).</li>
+                          <li>In contrast, everyday cars like the Sandero (223,289 registered) and TROC (177,749 registered) have a much larger presence and contribute heavily to CO2 emissions despite having lower per-car emissions.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h5>Electric Conversion Recommendation:</h5>
+                        <ul>
+                          <li>High-volume, high-emission cars like the Sandero and TROC need to transition to electric models, which produce zero emissions, to reduce the overall environmental impact of transportation.</li>
+                        </ul>
+                      </li>
+                    </ol>
+  
+                  </div>
+                  </section>
+                  <div class="github-link" style="text-align: center; margin-bottom: 20px;">
+                    <a href="https://github.com/qasem-ezzaldeen/Transportation-efficiency-study" target="_blank" style="font-size: 20px; text-decoration: none; color: #007bff; font-weight: bold;">Project on GitHub</a>
+                  </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $('.modal-open3').on('click', function () {
+                        $('body').addClass('modal-open3');
+                        $('.modal3').fadeIn();
+                    });
+                    $('.modal-close3').on('click', function () {
+                        $('body').removeClass('modal-open3');
+                        $('.modal3').fadeOut();
+                    });
+                });
+            </script>
+        </article>
+
+          <article>
+            <header>
                 <h2>Financial and Sales Report | Tableau</h2>
             </header>
-            <a href="javascript:void(0);" class="modal-open5">
+            <a href="javascript:void(0);" class="modal-open2">
                 <img src="images/Financial Report.jpg" alt="E-Commerce Data Analytics Project" style="max-width:100%; height:auto; cursor:pointer;">
             </a>
-            <p>This "Financial Report Dashboard" in Tableau provides a comprehensive view of key financial metrics, including sales, expenses, profit, and units sold. It features an interactive map for regional performance, detailed profit margin breakdowns, and trends in revenue vs. expenses. Users can filter data by date, metric, and segment to tailor the insights. It's a powerful tool for quick, data-driven decision-making.</p>
-            <button class="btn modal-open5">View Project</button> <br><br>
-            <div class="modal5">
-                <div class="parent"><button class="btn modal-close5 top"><img src="./images/close.png" alt=""></button></div>
+            <p>Financial Report Dashboard in Tableau provides a comprehensive view of key financial metrics, including sales, expenses, profit, and units sold. </p>
+            <button class="btn modal-open2">View Project</button> <br><br>
+            <div class="modal2">
+                <div class="parent"><button class="btn modal-close2 top"><img src="./images/close.png" alt=""></button></div>
                 <img src="./images/Financial Report.jpg" alt="Financial Sales Report">
                 <h2>Financial Report Dashboard</h2>
   <p>This Tableau dashboard provides an overview of key financial metrics for a specified period, including sales, expenses, profit, and units sold. It incorporates various visual elements to offer insights into regional performance, profit margins, revenue versus expenses, and more.</p>
@@ -212,13 +332,13 @@
             </div>
             <script>
                 $(document).ready(function () {
-                    $('.modal-open5').on('click', function () {
-                        $('body').addClass('modal-open5');
-                        $('.modal5').fadeIn();
+                    $('.modal-open2').on('click', function () {
+                        $('body').addClass('modal-open2');
+                        $('.modal2').fadeIn();
                     });
-                    $('.modal-close5').on('click', function () {
-                        $('body').removeClass('modal-open5');
-                        $('.modal5').fadeOut();
+                    $('.modal-close2').on('click', function () {
+                        $('body').removeClass('modal-open2');
+                        $('.modal2').fadeOut();
                     });
                 });
             </script>
