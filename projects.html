@@ -346,24 +346,54 @@
         <article>
           <header>
             <h2>
-                Covid-19<br/>
-                Overview | Power BI
+                Online Retail <br/>
+                Store | Python
             </h2>
           </header>
-          <img src="images/Covid.png" alt="Toy company sales Analysis" class="modal-open1" style="cursor: pointer;"/>
-            <p>This COVID-19 dashboard visually summarizes global pandemic data, including total cases, recoveries, and deaths. Despite initial data challenges, extensive cleaning with Power Query and advanced DAX functions enabled the creation of insightful and dynamic visualizations.</p>
+          <img src="images/store.png" alt="Online Retail Store Analysis" class="modal-open1" style="cursor: pointer;"/>
+            <p>Analyzing Online Store sales in Python using libraries like Pandas, Matplotlib and seaborn. I also analyzed and segmented customers based on their behavior using RFM.</p>
           
           <button class = "btn modal-open1"> View Project </button> <br><br>
           <div class = "modal1">
             <div class="parent"><button class="btn modal-close1 top"><img src="./images/close.png" alt=""></button></div>
-            <img src="./images/Covid.png" alt="Covid-19 Overview">
-            <h2>Covid-19 Overview</h2>
-            <p>This COVID-19 Dashboard was created after overcoming significant challenges due to incomplete data sets that contained many missing values. To prepare this comprehensive visual representation of pandemic statistics required extensive data cleaning using <span class="highlight">Power Query</span>—a powerful tool within Excel that enables complex transformations and data shaping workflows.</p>
-    <p>Following the initial cleaning process using Power Query's capabilities to filter out irrelevant information or correct inconsistencies within the dataset was crucial.</p>
-    <p>After ensuring that the dataset was clean and usable, <span class="highlight">Data Analysis Expressions (DAX)</span> functions were employed to create new measures that could provide deeper insights into COVID-19's impact across different regions over time. DAX functions are advanced formulas used within Power BI environments that allow for dynamic aggregations and calculations based on user interactions with reports or dashboards.</p>
-    <p>These measures were essential in developing meaningful visuals such as trend lines showing total cases over time or recovery rates which are critical in understanding both historical patterns as well as current situations regarding COVID-19 spread globally.</p>
-    <h2>Summary</h2>
-    <p>In summary, this dashboard provides an at-a-glance overview of global COVID-19 statistics through various data visualization methods. It allows viewers to quickly grasp trends over time, compare regional impacts, and understand key figures related to testing, recovery rates, and fatalities.</p>          </div>
+            <div class="github-link" style="text-align: center; margin-bottom: 20px;"><a href="https://github.com/qasem-ezzaldeen/Online_Retail" target="_blank" style="font-size: 20px; text-decoration: none; color: #007bff; font-weight: bold;">Project on GitHub</a></div>
+            <h2>Data Cleaning and Preparation</h2>
+<ul>
+  <li>Loaded the dataset into a Pandas DataFrame and checked for missing values.</li>
+  <li>Handled missing values appropriately, ensuring data integrity.</li>
+  <li>Converted the <code>InvoiceDate</code> column to datetime format for accurate time-based analysis.</li>
+  <li>Extracted additional features such as Month, Day, and Hour to enhance analysis.</li>
+  <li>Identified and removed erroneous data, including negative quantities and incorrect order dates.</li>
+  <li>Extracted city and country information from the <code>Country</code> column.</li>
+</ul>
+
+<h2>Exploratory Data Analysis (EDA)</h2>
+<ul>
+  <li>Identified the top 10 products by sales volume.</li>
+  <li>Determined the product that generated the most revenue.</li>
+  <li>Analyzed the best time of day for product advertisements.</li>
+  <li>Explored the most popular product category.</li>
+  <li>Identified the product category generating the most revenue.</li>
+  <li>Determined the countries with the highest sales volume.</li>
+  <li>Explored sales distribution patterns by country.</li>
+</ul>
+
+<h2>Data Visualization</h2>
+<ul>
+  <li>Visualized the sales trend over the year.</li>
+  <li>Created bar charts comparing sales across different product categories.</li>
+  <li>Visualized sales distribution by country.</li>
+  <li>Plotted the relationship between product price and quantity sold.</li>
+  <li>Used a heatmap to explore correlations between different features.</li>
+</ul>
+
+<h2>Advanced Analysis</h2>
+<ul>
+  <li>Identified frequently sold product combinations.</li>
+  <li>Segmented customers based on purchasing behavior.</li>
+  <li>Analyzed customer segments based on total spending and purchase frequency.</li>
+</ul>
+  </div>
           <script>
             $(document).ready(function () {
             $('.modal-open1').on('click', function () {
