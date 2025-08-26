@@ -3843,12 +3843,12 @@ input, select, textarea {
 			}
 
 			#main > .posts > * {
-				width: 50%;
+				width: 100%;
 			}
 
 			#main > .posts > * {
 				padding: 4rem;
-				width: 50%;
+				width: 100%;
 			}
 
 			#main > .posts > article {
@@ -3877,7 +3877,7 @@ input, select, textarea {
 				#main > .posts > article:nth-child(-n + 2) {
 					border-top-width: 0;
 				} 
-				.modal-open1,.modal-open2,.modal-open3,.modal-open0,.modal-open100 { overflow: hidden; }
+				.modal-open1,.modal-open2,.modal-open3,.modal-open0,.modal-open100 { overflow: hidden; font-size: 1.25rem; }
 				.modal1,.modal2,.modal3,.modal0, .modal4, .modal5,.modal100 {
 					position: fixed;
 					display: none;
@@ -3895,7 +3895,7 @@ input, select, textarea {
 					.parent{
 						height: 0;
 						display: flex;
-						flex-direction: row;
+						flex-direction: row-reverse;
 						background-color: transparent;
 						position: sticky;
 						top: 0px;
@@ -3947,25 +3947,16 @@ input, select, textarea {
 			@media screen and (max-width: 980px) {
 
 				#main > .posts > * {
-					width: 50%;
-				}
-
-				#main > .posts > * {
 					padding: 2.5rem;
-					width: 50%;
 				}
 
 			}
 
 			@media screen and (max-width: 736px) {
 
-				#main > .posts > * {
-					width: 100%;
-				}
 
 				#main > .posts > * {
 					padding: 2rem;
-					width: 100%;
 				}
 
 				#main > .posts > article:nth-child(2n - 1) {
